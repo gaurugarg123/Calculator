@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="calculator">
+        <!-- <form action="">
+            <div>
+                <input disabled="true" placeholder="0" type="text" class="screen">
+                <label for=""></label>
+            </div>
+        </form> -->
+        <form action="">
+            <div class="screenDiv1">
+                <input type="text" class="screen">
+                <div style="width: 100%;height: 25px;">
+                    <label id="inp" style="width: 100%; text-align: right; font-size: 1.5rem; opacity: 0.5;"></label>
+                </div>
+            </div>
+        </form>
+        <div class="btns">
+            <button type="button" class="btn btn-yellow" data-num="*" operater="true">*</button>
+            <button type="button" class="btn btn-yellow" data-num="/" operater="true">/</button>
+            <button type="button" class="btn btn-yellow" data-num="-" operater="true">-</button>
+            <button type="button" class="btn btn-yellow" data-num="+" operater="true">+</button>
+
+            <button type="button" class="btn btn-blue" data-num="9" operater="false">9</button>
+            <button type="button" class="btn btn-blue" data-num="8" operater="false">8</button>
+            <button type="button" class="btn btn-blue" data-num="7" operater="false">7</button>
+            <button type="button" class="btn btn-blue" data-num="6" operater="false">6</button>
+            <button type="button" class="btn btn-blue" data-num="5" operater="false">5</button>
+            <button type="button" class="btn btn-blue" data-num="4" operater="false">4</button>
+            <button type="button" class="btn btn-blue" data-num="3" operater="false">3</button>
+            <button type="button" class="btn btn-blue" data-num="2" operater="false">2</button>
+            <button type="button" class="btn btn-blue" data-num="1" operater="false">1</button>
+            <button type="button" class="btn btn-blue" data-num="0" operater="false">0</button>
+            <button type="button" class="btn btn-blue" data-num="." operater="true">.</button>
+
+            <button type="button" class="btn-equal">=</button>
+            <button type="button" class="btn-clear">C</button>
+            <button type="button" class="btn-clear" onclick="clearr()">Back</button>
+
+
+
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
